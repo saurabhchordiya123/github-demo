@@ -1,0 +1,7 @@
+GitHub API URL Construction: The download_file_from_github function constructs the GitHub API URL (api_url) directly using the repository owner (owner), repository name (repo), and the file path within the repository (file_path_in_repo).
+
+GitHub Personal Access Token: The token (github_token) is used in the Authorization header of the request to authenticate and authorize access to the private repository content.
+
+Fetching File Content: The function makes a GET request to the GitHub API (api_url) with appropriate headers containing the token. It retrieves the file content, decodes it from Base64 encoding, and returns it as a UTF-8 encoded string (file_content).
+
+Upload to S3: The upload_file_to_s3 function initializes an S3 client using AWS credentials (aws_access_key and aws_secret_key), uploads the file_content to the specified S3 bucket (s3_bucket) and key (s3_key)
