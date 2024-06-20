@@ -1,0 +1,3 @@
+The upload_file_to_s3 function initializes a Boto3 S3 client.
+It uses a BytesIO object to create an in-memory file-like object from the file content.
+The upload_fileobj method uploads the in-memory file directly to the specified S3 bucket and key
